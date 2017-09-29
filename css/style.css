@@ -1,0 +1,79 @@
+@font-face {
+  font-family: 'hackregular';
+  src: url(../fonts/Hack-Regular-webfont.woff) format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #0D0D0D;
+  font-family: 'hackregular', monospace;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper-container {
+  padding-top: 2.5vh;
+  width: 98vw;
+  height: 95vh;
+  overflow: hidden;
+}
+
+.swiper-container-h {
+  padding-top: 0px;
+}
+
+.swiper-slide {
+  font-size: 18px;
+  color: #393740;
+  background: #F2F2F2;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 40px 60px;
+  background-position: center;
+  background-size: auto 90%;
+  background-repeat: no-repeat;
+}
+
+.noStyle {
+  padding: 0px 0px;
+  background: #0D0D0D;
+}
+
+
+
+.text-container {
+  background-color: #F2F2F2;
+  margin-top: -5px;
+  padding: 5px;
+  max-width: 400px;
+}
+
+.shorter {
+  max-width: 200px;
+}
+
+.swiper-slide .title {
+  font-size: 1em;
+  font-weight: 300;
+}
+
+.swiper-slide .subtitle {
+  font-size: 0.8em;
+}
+
+.swiper-slide .text {
+  font-size: 0.6em;
+  line-height: 1.5;
+}
+
+a {
+  color: #1E1640;
+  text-decoration: underline;
+}
