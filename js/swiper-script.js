@@ -18,6 +18,8 @@ var mySwiperV = new Swiper('.swiper-container-v', {
   preventClicks: false,
   preventClicksPropagation: false,
 
+  touchRatio: 1.4,
+
   speed: 1000,
   keyboardControl: true,
 
@@ -50,6 +52,8 @@ var mySwiperH = new Swiper('.swiper-container-h', {
 
   preloadImages: false,
   lazyLoading: true,
+
+  touchRatio: 1.4,
 
   speed: 1000,
   keyboardControl: true,
