@@ -3,6 +3,7 @@ var mySwiperV = new Swiper('.swiper-container-v', {
   direction: 'vertical',
 
   simulateTouch: false,
+
   freeMode: false,
 
   mousewheelControl: true,
@@ -26,9 +27,14 @@ var mySwiperV = new Swiper('.swiper-container-v', {
     shadow: false
   },
 
+  touchEventsTarget: 'wrapper',
+  nextButton: '.swiper-button-down',
 
   hashnav: true,
-  hashnavWatchState: true
+  hashnavWatchState: true,
+
+  slidesPerView: 3,
+  centeredSlides: true
 })
 
 var mySwiperH = new Swiper('.swiper-container-h', {
@@ -50,6 +56,8 @@ var mySwiperH = new Swiper('.swiper-container-h', {
 
   nextButton: '.swiper-button-next',
   prevButton: '.swiper-button-prev',
+
+  slidesPerView: 1,
 
   effect: 'cube',
   cube: {

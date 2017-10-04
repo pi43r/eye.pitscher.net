@@ -1,0 +1,175 @@
+//output:../index.html
+
+mixin slide(hash)
+  if hash
+    .swiper-slide(data-hash=hash)
+      if block
+        block
+  else
+    .swiper-slide()
+      if block
+        block
+
+
+mixin swiperH()
+  .swiper-container-h
+    .swiper-button-next
+    .swiper-button-prev
+    .swiper-wrapper
+      if block
+        block
+
+mixin info()
+  .info(onclick="toggleInfo(this);") i
+    .expand-text 
+      if block
+        block
+
+
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1')
+    meta(name='keywords', content='portfolio, art, design, contemporary, post-internet')
+    meta(name='author', content='Matthias Pitscher')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, user-scalable=no')
+    title Pitscher
+    link(rel='shortcut icon' href='favicon.ico')
+    link(rel='stylesheet', type='text/css', href='css/normalize.css')
+    link(rel='stylesheet', type='text/css', href='//cdn.jsdelivr.net/font-hack/2.020/css/hack.min.css')
+    link(rel='stylesheet', type='text/css', href='css/swiper.css')
+    link(rel='stylesheet', type='text/css', href='css/style.css')
+
+  body
+    .swiper-container-v
+      .swiper-wrapper
+        +slide(1)
+          .text-container
+            h1.title H&#128065;,
+              br 
+              |m&#128065; name is Matthias. 
+              br
+              |&#128065; am an artist and des&#128065;gner working with technology in d&#128065;verse ways.
+              br 
+              |Please have an &#128065; on the things &#128065; have done.
+              br 
+              |Here is m&#128065; 
+              a(target='_blank', href='mailto:matthias@pitscher.net') contact
+              |  if you want to create something together. 
+          .swiper-button-down
+        +slide(2)
+          +info()
+            h1 Shared Habitats
+            h2 06 2017
+            p 
+              | I had the pleasure to design a Poster for the exhibition “Shared Habitats” in 
+              a(target='_blank', href='https://www.google.de/maps/place/Kaohsiung,+Taiwan/@20.5587299,119.7285306,611404a,35y,25.31t/data=!3m1!1e3!4m5!3m4!1s0x346e43517a7a741b:0x4826a24a54732a37!8m2!3d22.6272784!4d120.3014353?hl=de') Kaohsiung
+              |.
+              |My former professor and her students are exhibiting media art works that deal with the environment (Umwelt). The poster can be flipped upside down and two posters together remind us that we live in a shared habitat.
+          +swiperH()
+            +slide()
+              img.ri(src="images/Shared_Habitats.jpg", alt="Poster Shared Habitats")
+            +slide()
+              img.ri(src="images/Shared_Habitats_mockup.jpg", alt="Poster Shared Habitats")
+        +slide(3)
+          +info()
+            h1 Social Media Meditation
+            h2 04 2017
+            p 
+              | For my thesis project I created a visual language that mimics contemporary yoga and meditation institutes.
+              | This speculative brand is based on the idea of nothingness. The logo got stripped away from any iconic form.
+              | The promotional pictures resemble stockphotos.
+              br
+              | More information: 
+              a(target='_blank', href='http://www.socialmediameditation.net') www.socialmediameditation.net
+              br
+              | Even more information in my 
+              a(target='_blank', href='http://www.pitscher.net/Thesis_SMM.pdf') Thesis Book
+              | (german)
+
+          +swiperH()
+            +slide()
+              img.ri(src="images/smm_logo_rund.svg", alt="social media meditation logo")
+            +slide()
+              img.ri(src="images/smm_promo.jpg", alt="social media meditation logo")
+            +slide()
+              img.ri(src="images/smm_website.png", alt="social media meditation website")
+            +slide()
+              img.ri(src="images/smm_thesis.jpg", alt="social media meditation book")
+        +slide(4)
+          +info()
+            h1 Spekulative Gesellschaft
+            h2 2016-2017
+            p 
+              | The Speculative Society (Spekulative Gesellschaft) is an everchanging group of individuals that organized events, happenings and exhibitions.
+              | I created a lot of the recent graphics, like invitation cards, logos, posters and leaflets.
+          +swiperH()
+            +slide()
+              img.ri(src="images/SpeGe_Logo.png", alt="Spekulative Gesellschaft Logo")
+            +slide()
+              img.ri(src="images/MdSGhdnzt.jpg", alt="Mit der Spekulativen Gesellschaft hat das nichts zu tun")
+              a(target='_blank', href='https://winterwerkschau.bau-ha.us/').sub winterwerkschau
+            +slide()
+              img.ri(src="images/Spege_Einladung1.jpg", alt="Einladung zur Spekulativen Gesellschaft")
+            +slide()
+              img.ri(src="images/niche_plakat.jpg", alt="Niche_Construction Poster")
+              p.sub 
+                | in collaboration with Rama Bielewski 
+                a(href='http://summaery.uni-weimar.de/de/universitaet/profil/veranstaltungen/veranstaltungen-2016/summaery2016/projekte/?tx_showcase_summaeryprojectpublic%5Bproject%5D=723&tx_showcase_summaeryprojectpublic%5Baction%5D=show&tx_showcase_summaeryprojectpublic%5Bcontroller%5D=Summaery&cHash=ea1bb2d0ebbc2c92ae52be73d2bb6c26') Summaery 2016
+            +slide()
+              img.ri(src="images/GMU_Poster.jpg", alt="Gestalten Medialer Umgebungen Poster")
+              a(href='http://acudmachtneu.de/events/553/gestalten-medialer-umgebungen/').sub Link
+        +slide(5)
+          +info()
+            h1 Cheap&ndash;Quick&ndash;Dirty
+            h2 03 2016
+            p 
+              | Cheap and dirty posters for the exhibition called “Cheap Quick Dirty”, where students inventend B-Movies and created additional graphics.
+          +swiperH()
+            +slide()
+              img.ri(src="images/cheapquickdirty_poster_red.png", alt="Cheap Quick Dirty Poster")
+            +slide()
+              img.ri(src="images/cheapquickdirty_poster_Orange.jpg", alt="Cheap Quick Dirty Poster")
+            +slide()
+              img.ri(src="images/cheapquickdirty_poster_printed.jpg", alt="Cheap Quick Dirty Poster")
+            +slide()
+              img.ri(src="images/cheapquickdirty_poster_glued.jpg", alt="Cheap Quick Dirty Poster")
+            +slide()
+              img.ri(src="images/cheapquickdirty_poster_cool.jpg", alt="Cheap Quick Dirty Poster")
+              p.sub Disregarded version
+        +slide(6)
+          +info()
+            h1 Mess with tech, sense & thinking
+            h2 02 2016
+            p 
+              | Together with Rama Bielewski we designed a foldable Poster/Flyer combination for a hybrid event at 
+              a(target="_blank" href="https://transmediale.de/content/the-mess-with-tech-sense-and-thinking") transmediale16
+          +swiperH()
+            +slide()
+              img.ri(src="images/mtst_poster.jpg", alt="Mess with tech sense and thinking Poster")
+            +slide()
+              img.ri(src="images/mtst_flyer_cover.jpg", alt="Mess with tech sense and thinking Flyer Cover")
+            +slide()
+              img.ri(src="images/mtst_flyer_front.jpg", alt="Mess with tech sense and thinking Flyer Front")
+            +slide()
+              img.ri(src="images/mtst_flyer_back.jpg", alt="Mess with tech sense and thinking Flyer Back")
+        +slide(7)
+          +info()
+            h1 Preis der Medienkunst / Mediengestaltung
+            h2 02 2016
+            p 
+              | The Media Art Award is an annual competition for recent graduates. I created the minimalistic poster for the 2014 edition. 
+              | The octahedron resembles a digital version of a handax, the first human tool. But it also stands for the 8 fields of study in Media Art and Design.
+              | A 3 dimensional version was given out as the first price.
+
+          +swiperH()
+            +slide()
+              img.ri(src="images/pdm_black.jpg", alt="Preis der Medienkunst black")
+            +slide()
+              img.ri(src="images/pdm_white.png", alt="Preis der Medienkunst white")
+
+
+    script(src='js/swiper.js')
+    script(src='js/swiper-script.js')
+    script(src='js/toggle.js')
