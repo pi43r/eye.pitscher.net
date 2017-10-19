@@ -3,7 +3,6 @@ var mySwiperV = new Swiper('.swiper-container-v', {
   direction: 'vertical',
 
   simulateTouch: false,
-
   freeMode: false,
 
   mousewheelControl: true,
@@ -14,11 +13,12 @@ var mySwiperV = new Swiper('.swiper-container-v', {
 
   preloadImages: false,
   lazyLoading: true,
+  slidesPerView: 1,
 
   preventClicks: false,
   preventClicksPropagation: false,
 
-  touchRatio: 1.4,
+  touchRatio: 1.2,
 
   speed: 1000,
   keyboardControl: true,
@@ -35,7 +35,6 @@ var mySwiperV = new Swiper('.swiper-container-v', {
   hashnav: true,
   hashnavWatchState: true,
 
-  slidesPerView: 3,
   centeredSlides: true
 })
 
@@ -48,12 +47,12 @@ var mySwiperH = new Swiper('.swiper-container-h', {
 
 
   zoom: true,
-  loop: false,
+  loop: true,
 
   preloadImages: false,
   lazyLoading: true,
 
-  touchRatio: 1.4,
+  touchRatio: 1.2,
 
   speed: 1000,
   keyboardControl: true,

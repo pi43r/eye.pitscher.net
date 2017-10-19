@@ -1,0 +1,5 @@
+@font-face {
+    font-family: 'LaFawnduh';
+    src: url('LaFawnduh-Regular.otf') format('opentype'),
+         url('LaFawnduh-Regular.woff') format('woff');
+}
