@@ -1,220 +1,414 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <meta name="keywords" content="portfolio, art, design, contemporary, post-internet">
     <meta name="author" content="Matthias Pitscher">
     <!-- facbeook stuff-->
-    <meta property="og:url" content="images/preview.png">
+    <meta property="og:url" content="https://xn--mp8h.pitscher.net">
+    <meta property="og:image" content="https://xn--mp8h.pitscher.net/images/preview.png">
     <meta property="og:type" content="website">
     <meta property="og:title" content="&amp;#128065;">
-    <meta property="og:description" content="Please, have a look.">
+    <meta property="og:description" content="H&amp;#128065;, m&amp;#128065; name is Pitscher. ">
     <title>Pitscher</title>
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/swiper.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
     <link rel="stylesheet" type="text/css" href="fonts/font.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script defer src="js/swiper.min.js"></script>
+    <script defer src="js/swiper-script.js"></script>
+    <script defer src="js/eye.js"></script>
   </head>
-  <body>
-    <div class="swiper-container-v">
+  <body><img id="follower" src="assets/cursor/svg/mouse-drag.svg">
+    <div class="swiper-container-vertical">
       <div class="swiper-wrapper">
-        <div data-hash="start" class="swiper-slide">
-          <div class="text-container">
-            <h1 class="title">H&#128065;,<br>m&#128065; name is Pitscher. <br>&#128065; am an artist and des&#128065;gner working with technology in d&#128065;verse ways.<br>Here is m&#128065; <a target="_blank" href="mailto:matthias@pitscher.net">contact</a> if you want to create something together. </h1>
+        <div class="swiper-slide" data-hash="👁">
+          <div class="inner-slide-center">
+            <div class="title column">
+              <h1>
+                H&#128065;, <br>m&#128065; name is pitscher. 
+<br>&#128065; am an artist and des&#128065;gner working with technology in d&#128065;verse ways.
+<br>Here is m&#128065; <a target="_blank" href="mailto:matthias@pitscher.net">contact</a> &mdash; Let's create something n&#128065;ce together! 
+              </h1><small>typeface by <a target="_blank" href="https://napoleon.services/">napoleon.services</a></small><img src="images/keys.svg" width="100" style="position: absolute;bottom: 100px"><small style="position: absolute;bottom: 30px; text-align: center;">scroll to &#128065; some <br> print & web projects</small>
+            </div>
           </div>
-          <div class="swiper-button-down"></div>
         </div>
-        <div data-hash="Pracht" class="swiper-slide">
-          <div onclick="toggleInfo(this);" class="info">i
-            <div class="expand-text"> 
-              <h1>Pr...t</h1>
-              <h2>02 2018</h2>
-              <p>
-                 
-                Advertisement for two shows at a secret venue in Leipzig. The styles are completely opposit of each other. 
-                While one is minimalistic with a fine noise texture and showcasing the great font <a target="_blank" href="http://oxlos.crowdfont.org">Oxlos</a>. The other one is completely overloaded with <a target="_blank" href="https://openclipart.org/">ClipArt</a>. 
+        <div class="swiper-slide" data-hash="cocolands">
+          <div class="inner-slide">
+            <div class="description">
+              <h1>coco lands</h1>
+              <h4>02 2020</h4>
+              <p>With a group of international artists we initiated coco lands to start a collaborative diary during the coronavirus pandemic. With Juan Pablo we created a <a target="_blank" href="https://cocolands.xyz/">website</a> to collect our creative outputs. The page is running on tumblr with a custom template, utilizing threejs for 3D rendering.
+                <br> Font in use: Tomorrow
               </p>
             </div>
-          </div>
-          <div class="swiper-container-h">
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-wrapper">
-              <div class="swiper-slide"><img src="images/Poster_Pracht_3.3__black.png" alt="Poster Pracht black" class="ri dropshadow">
+            <div class="imagebox">
+              <div class="shadow"></div>
+              <div class="swiper-container-horizontal">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img class="swiper-img swiper-lazy" data-src="images/coco/coco_web_1.png"/>
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                  <div class="swiper-slide"><img class="swiper-img swiper-lazy" data-src="images/coco/coco_web_2.jpg"/>
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                  <div class="swiper-slide"><img class="swiper-img swiper-lazy" data-src="images/coco/coco_web_3.png"/>
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                </div>
+                <div class="swiper-scrollbar"></div>
               </div>
-              <div class="swiper-slide"><img src="images/Poster_Pracht_3.3__white.png" alt="Poster Pracht white" class="ri dropshadow">
-              </div>
-              <div class="swiper-slide"><img src="images/Prt_15-Feb.png" alt="Poster Pracht ClipArt" class="ri dropshadow">
-              </div>
+              <div class="shadow"></div>
             </div>
           </div>
         </div>
-        <div data-hash="shared-habitats" class="swiper-slide">
-          <div onclick="toggleInfo(this);" class="info">i
-            <div class="expand-text"> 
+        <div class="swiper-slide" data-hash="shared-habitats-linz">
+          <div class="inner-slide">
+            <div class="description">
               <h1>Shared Habitats</h1>
-              <h2>06 2017</h2>
-              <p>
-                 
-                I had the pleasure to design a Poster for the exhibition “Shared Habitats” in <a target="_blank" href="https://www.google.de/maps/place/Kaohsiung,+Taiwan/@20.5587299,119.7285306,611404a,35y,25.31t/data=!3m1!1e3!4m5!3m4!1s0x346e43517a7a741b:0x4826a24a54732a37!8m2!3d22.6272784!4d120.3014353?hl=de">Kaohsiung</a>.
-                My former professor and her students are exhibiting media art works that deal with the environment (Umwelt). The poster can be flipped upside down and two posters together remind us that we live in a shared habitat.
+              <h4>08 2019</h4>
+              <p>As part of the Ars Electronica festival, the Bauhaus Uni organized another Shared Habitats exhibition. I worked with Ursula Damm, Theresa Schubert and Mindaugas Gapševičius on the visual identity. A generative, organic looking, blob was used as the main icon on the <a target="_blank" href="http://shared-habitats.eu/">website</a>, a poster, booklets & stickers.
+                <br>Fonts in use: Neue Machina, IBM Plex Mono
               </p>
             </div>
-          </div>
-          <div class="swiper-container-h">
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-wrapper">
-              <div class="swiper-slide"><img src="images/Shared_Habitats.jpg" alt="Poster Shared Habitats" class="ri dropshadow">
+            <div class="imagebox">
+              <div class="shadow"></div>
+              <div class="swiper-container-horizontal">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img class="swiper-img swiper-lazy" data-src="images/sh_2/shared_habitats_poster.jpg"/>
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                  <div class="swiper-slide"><img class="swiper-img swiper-lazy" data-src="images/sh_2/shared_habitats_web-1-Medium.jpg"/>
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                  <div class="swiper-slide"><img class="swiper-img swiper-lazy" data-src="images/sh_2/shared_habitats_web-2.jpg"/>
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                  <div class="swiper-slide"><img class="swiper-img swiper-lazy" data-src="images/sh_2/shared_habitats_web-3-Medium.jpg"/>
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                  <div class="swiper-slide"><img class="swiper-img swiper-lazy" data-src="images/sh_2/shared_habitats_flyer1.jpg"/>
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                  <div class="swiper-slide"><img class="swiper-img swiper-lazy" data-src="images/sh_2/shared_habitats_flyer2.jpg"/>
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                  <div class="swiper-slide"><img class="swiper-img swiper-lazy" data-src="images/sh_2/shared_habitats_flyer3.jpg"/>
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                  <div class="swiper-slide"><img class="swiper-img swiper-lazy" data-src="images/sh_2/shared_habitats_flyer4.jpg"/>
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                  <div class="swiper-slide"><img class="swiper-img swiper-lazy" data-src="images/sh_2/shared_habitats_flyer5.jpg"/>
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                </div>
+                <div class="swiper-scrollbar"></div>
               </div>
-              <div class="swiper-slide"><img src="images/Shared_Habitats_mockup.jpg" alt="Poster Shared Habitats" class="ri">
-              </div>
+              <div class="shadow"></div>
             </div>
           </div>
         </div>
-        <div data-hash="social-media-meditation" class="swiper-slide">
-          <div onclick="toggleInfo(this);" class="info">i
-            <div class="expand-text"> 
-              <h1>Social Media Meditation</h1>
-              <h2>04 2017</h2>
+        <div class="swiper-slide" data-hash="btbb">
+          <div class="inner-slide">
+            <div class="description">
+              <h1>Born to be Bauhaus</h1>
+              <h4>2018-2023</h4>
+              <p>Together with <a target="_blank" href="http://adrianpalko.com/">Adrian Palko</a> we created the identity for the annual art prize <a target="_blank" href="https://www.uni-weimar.de/born-to-be-bauhaus/">Born to be Bauhaus</a>. Each year is represented by a bright neon color. Posters are printed in offset with a special colors. 
+                <br> The page is a progressive web app, built with nuxtjs.
+                <br> Fonts in use: Monument Grotesk, Pano, Pickle
+              </p>
+            </div>
+            <div class="imagebox">
+              <div class="shadow"></div>
+              <div class="swiper-container-horizontal">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img class="swiper-img swiper-lazy" data-src="images/btbb/btbb_website_1.png"/>
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                  <div class="swiper-slide"><img class="swiper-img swiper-lazy" data-src="images/btbb/btbb_website_2.png"/>
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                  <div class="swiper-slide"><img class="swiper-img swiper-lazy" data-src="images/btbb/btbb_website_3-Medium.png"/>
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                  <div class="swiper-slide"><img class="swiper-img swiper-lazy" data-src="images/btbb/btbb_website_4-Medium.jpg"/>
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                  <div class="swiper-slide"><img class="swiper-img swiper-lazy" data-src="images/btbb/btbb_plakat_18-Medium.jpg"/>
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                  <div class="swiper-slide"><img class="swiper-img swiper-lazy" data-src="images/btbb/btbb_plakat_19-Medium.jpg"/>
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                  <div class="swiper-slide"><img class="swiper-img swiper-lazy" data-src="images/btbb/btbb_plakat_20-Medium.jpg"/>
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                </div>
+                <div class="swiper-scrollbar"></div>
+              </div>
+              <div class="shadow"></div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide" data-hash="thibaut-henz">
+          <div class="inner-slide">
+            <div class="description">
+              <h1>Thibaut Henz</h1>
+              <h4>03 2018</h4>
+              <p>Online portfolio for the photographer <a target="_blank" href="https://thibauthenz.com/">Thibaut Henz</a>. We decided on a customized version of the wordpress lay theme, which gives him the ability to arrange images in interesting ways.
+                <br> Font in use: Sinkin Sans
+              </p>
+            </div>
+            <div class="imagebox">
+              <div class="shadow"></div>
+              <div class="swiper-container-horizontal">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img class="swiper-img swiper-lazy" data-src="images/thibaut/thibaut-1-Medium.jpg"/>
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                  <div class="swiper-slide"><img class="swiper-img swiper-lazy" data-src="images/thibaut/thibaut-2-Medium.jpg"/>
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                  <div class="swiper-slide"><img class="swiper-img swiper-lazy" data-src="images/thibaut/thibaut-3-Medium.jpg"/>
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                  <div class="swiper-slide"><img class="swiper-img swiper-lazy" data-src="images/thibaut/thibaut-4-Medium.jpg"/>
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                  <div class="swiper-slide"><img class="swiper-img swiper-lazy" data-src="images/thibaut/thibaut-5-Medium.jpg"/>
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                </div>
+                <div class="swiper-scrollbar"></div>
+              </div>
+              <div class="shadow"></div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide" data-hash="Prt">
+          <div class="inner-slide">
+            <div class="description">
+              <h1>Pr...t</h1>
+              <h4>02 2018</h4>
               <p>
-                 
-                For my thesis project I created a visual language that mimics contemporary yoga and meditation institutes.
+                 Advertisement for two shows at a secret venue in Leipzig. The styles are completely opposit of each other. 
+                While one is minimalistic with a fine noise texture and showcasing the great font <a target="_blank" href="http://oxlos.crowdfont.org">Oxlos</a>. The other one is completely overloaded with <a target="_blank" href="https://openclipart.org/">ClipArt</a>.
+              </p>
+            </div>
+            <div class="imagebox">
+              <div class="shadow"></div>
+              <div class="swiper-container-horizontal">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img class="swiper-img swiper-lazy" data-src="images/prt/Poster_Pracht_3.3__black.png"/>
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                  <div class="swiper-slide"><img class="swiper-img swiper-lazy" data-src="images/prt/Poster_Pracht_3.3__white.jpg"/>
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                  <div class="swiper-slide"><img class="swiper-img swiper-lazy" data-src="images/prt/Prt_15-Feb.jpg"/>
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                </div>
+                <div class="swiper-scrollbar"></div>
+              </div>
+              <div class="shadow"></div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide" data-hash="shared-habitats">
+          <div class="inner-slide">
+            <div class="description">
+              <h1>Shared Habitats</h1>
+              <h4>06 2017</h4>
+              <p>
+                 I had the pleasure to design a Poster for the exhibition “Shared Habitats” in <a target="_blank" href="https://www.google.de/maps/place/Kaohsiung,+Taiwan/@20.5587299,119.7285306,611404a,35y,25.31t/data=!3m1!1e3!4m5!3m4!1s0x346e43517a7a741b:0x4826a24a54732a37!8m2!3d22.6272784!4d120.3014353?hl=de">Kaohsiung</a>.
+                Ursula Damm and her students are exhibiting media art works that deal with the environment (Umwelt). The poster can be flipped upside down and two posters together remind us of our shared habitat.
+              </p>
+            </div>
+            <div class="imagebox">
+              <div class="shadow"></div>
+              <div class="swiper-container-horizontal">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img class="swiper-img swiper-lazy" data-src="images/sh_1/Shared_Habitats-Medium.jpg"/>
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                  <div class="swiper-slide"><img class="swiper-img swiper-lazy" data-src="images/sh_1/Shared_Habitats_mockup-Medium.jpg"/>
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                </div>
+                <div class="swiper-scrollbar"></div>
+              </div>
+              <div class="shadow"></div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide" data-hash="social-media-meditation">
+          <div class="inner-slide">
+            <div class="description">
+              <h1>Social Media Meditation</h1>
+              <h4>04 2017</h4>
+              <p>
+                 For my thesis project I created a visual language that mimics contemporary yoga and meditation institutes.
                 This speculative brand is based on the idea of nothingness. The logo got stripped away from any iconic form.
                 The promotional pictures resemble stockphotos.<br>More information: <a target="_blank" href="http://www.socialmediameditation.net">www.socialmediameditation.net</a><br>Even more information in my <a target="_blank" href="http://www.pitscher.net/Thesis_SMM.pdf">Thesis Book</a>(german)
               </p>
             </div>
-          </div>
-          <div class="swiper-container-h">
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-wrapper">
-              <div class="swiper-slide"><img src="images/smm_logo.svg" alt="social media meditation logo" class="ri">
+            <div class="imagebox">
+              <div class="shadow"></div>
+              <div class="swiper-container-horizontal">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img class="swiper-img swiper-lazy" data-src="images/smm/smm_logo.svg"/>
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                  <div class="swiper-slide"><img class="swiper-img swiper-lazy" data-src="images/smm/smm_promo.jpg"/>
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                  <div class="swiper-slide"><img class="swiper-img swiper-lazy" data-src="images/smm/smm_website.jpg"/>
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                  <div class="swiper-slide"><img class="swiper-img swiper-lazy" data-src="images/smm/smm_thesis-Medium.jpg"/>
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                </div>
+                <div class="swiper-scrollbar"></div>
               </div>
-              <div class="swiper-slide"><img src="images/smm_promo.jpg" alt="social media meditation logo" class="ri">
-              </div>
-              <div class="swiper-slide"><a target="_blank" href="http://www.socialmediameditation.net" class="ri"><img src="images/smm_website.png" alt="social media meditation website" class="ri"></a>
-              </div>
-              <div class="swiper-slide"><a target="_blank" href="http://www.pitscher.net/Thesis_SMM.pdf" class="ri"><img src="images/smm_thesis.jpg" alt="social media meditation book" class="ri"></a>
-              </div>
+              <div class="shadow"></div>
             </div>
           </div>
         </div>
-        <div data-hash="speculative-society" class="swiper-slide">
-          <div onclick="toggleInfo(this);" class="info">i
-            <div class="expand-text"> 
+        <div class="swiper-slide" data-hash="spekulative-gesellschaft">
+          <div class="inner-slide">
+            <div class="description">
               <h1>Spekulative Gesellschaft</h1>
-              <h2>2016-2017</h2>
+              <h4>2016-2017</h4>
               <p>
-                 
-                The Speculative Society (Spekulative Gesellschaft) is an everchanging group of individuals that organized events, happenings and exhibitions.
+                 The Speculative Society (Spekulative Gesellschaft) was an everchanging group of individuals that organized events, happenings and exhibitions.
                 I created a lot of the recent graphics, like invitation cards, logos, posters and leaflets.
               </p>
             </div>
-          </div>
-          <div class="swiper-container-h">
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-wrapper">
-              <div class="swiper-slide"><img src="images/SpeGe_Logo.png" alt="Spekulative Gesellschaft Logo" class="ri">
+            <div class="imagebox">
+              <div class="shadow"></div>
+              <div class="swiper-container-horizontal">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img class="swiper-img swiper-lazy" data-src="images/spege/SpeGe_Logo.png"/>
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                  <div class="swiper-slide"><img class="swiper-img swiper-lazy" data-src="images/spege/MdSGhdnzt-Large.jpg"/>
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                  <div class="swiper-slide"><img class="swiper-img swiper-lazy" data-src="images/spege/SpeGe_Einladung1-Large.jpg"/>
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                  <div class="swiper-slide"><img class="swiper-img swiper-lazy" data-src="images/spege/niche_plakat.jpg"/>
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                  <div class="swiper-slide"><img class="swiper-img swiper-lazy" data-src="images/spege/GMU_Poster.jpg"/>
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                </div>
+                <div class="swiper-scrollbar"></div>
               </div>
-              <div class="swiper-slide"><a target="_blank" href="https://winterwerkschau.bau-ha.us/"><img src="images/MdSGhdnzt.jpg" alt="Mit der Spekulativen Gesellschaft hat das nichts zu tun" class="ri"></a>
-              </div>
-              <div class="swiper-slide"><img src="images/SpeGe_Einladung1.jpg" alt="Einladung zur Spekulativen Gesellschaft" class="ri">
-              </div>
-              <div class="swiper-slide"><a href="http://summaery.uni-weimar.de/de/universitaet/profil/veranstaltungen/veranstaltungen-2016/summaery2016/projekte/?tx_showcase_summaeryprojectpublic%5Bproject%5D=723&amp;tx_showcase_summaeryprojectpublic%5Baction%5D=show&amp;tx_showcase_summaeryprojectpublic%5Bcontroller%5D=Summaery&amp;cHash=ea1bb2d0ebbc2c92ae52be73d2bb6c26"><img src="images/niche_plakat.jpg" alt="Niche_Construction Poster" class="ri dropshadow"></a>
-                <p class="sub">in collaboration with Rama Bielewski </p>
-              </div>
-              <div class="swiper-slide"><a target="_blank" href="http://acudmachtneu.de/events/553/gestalten-medialer-umgebungen/" class="ri"><img src="images/GMU_Poster.jpg" alt="Gestalten Medialer Umgebungen Poster" class="ri dropshadow"></a>
-              </div>
+              <div class="shadow"></div>
             </div>
           </div>
         </div>
-        <div data-hash="cheap-quick-dirty" class="swiper-slide">
-          <div onclick="toggleInfo(this);" class="info">i
-            <div class="expand-text"> 
+        <div class="swiper-slide" data-hash="cheap-quick-dirty">
+          <div class="inner-slide">
+            <div class="description">
               <h1>Cheap&ndash;Quick&ndash;Dirty</h1>
-              <h2>03 2016</h2>
+              <h4>03 2016</h4>
               <p>
-                 
-                Cheap and dirty posters for the exhibition called “Cheap Quick Dirty”, where students inventend B-Movies and created additional graphics.
-              </p>
+                 Cheap and dirty posters for the exhibition called “Cheap Quick Dirty”, where students inventend B-Movies and created additional graphics.</p>
             </div>
-          </div>
-          <div class="swiper-container-h">
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-wrapper">
-              <div class="swiper-slide"><img src="images/cheapquickdirty_poster_RED.png" alt="Cheap Quick Dirty Poster" class="ri dropshadow">
+            <div class="imagebox">
+              <div class="shadow"></div>
+              <div class="swiper-container-horizontal">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img class="swiper-img swiper-lazy" data-src="images/cqd/cheapquickdirty_poster_RED.png"/>
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                  <div class="swiper-slide"><img class="swiper-img swiper-lazy" data-src="images/cqd/cheapquickdirty_poster_Orange-Medium.jpg"/>
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                  <div class="swiper-slide"><img class="swiper-img swiper-lazy" data-src="images/cqd/cheapquickdirty_poster_printed-Medium.jpg"/>
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                  <div class="swiper-slide"><img class="swiper-img swiper-lazy" data-src="images/cqd/cheapquickdirty_poster_glued-Medium.jpg"/>
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                </div>
+                <div class="swiper-scrollbar"></div>
               </div>
-              <div class="swiper-slide"><img src="images/cheapquickdirty_poster_Orange.jpg" alt="Cheap Quick Dirty Poster" class="ri dropshadow">
-              </div>
-              <div class="swiper-slide"><img src="images/cheapquickdirty_poster_printed.jpg" alt="Cheap Quick Dirty Poster" class="ri">
-              </div>
-              <div class="swiper-slide"><img src="images/cheapquickdirty_poster_glued.jpg" alt="Cheap Quick Dirty Poster" class="ri">
-              </div>
-              <div class="swiper-slide"><img src="images/cheapquickdirty_poster_cool.jpg" alt="Cheap Quick Dirty Poster" class="ri dropshadow">
-                <p class="sub">Disregarded version</p>
-              </div>
+              <div class="shadow"></div>
             </div>
           </div>
         </div>
-        <div data-hash="mess-with-tech-sense-and-thinking" class="swiper-slide">
-          <div onclick="toggleInfo(this);" class="info">i
-            <div class="expand-text"> 
+        <div class="swiper-slide" data-hash="mess-wth-tech-sense-thinking">
+          <div class="inner-slide">
+            <div class="description">
               <h1>Mess with tech, sense & thinking</h1>
-              <h2>02 2016</h2>
-              <p>
-                 
-                Together with Rama Bielewski we designed a foldable Poster/Flyer combination for a hybrid event at <a target="_blank" href="https://transmediale.de/content/the-mess-with-tech-sense-and-thinking">transmediale16</a>
-              </p>
+              <h4>02 2016</h4>
+              <p> </p>Together with Rama Bielewski we designed a foldable Poster/Flyer combination for a hybrid event at <a target="_blank" href="https://transmediale.de/content/the-mess-with-tech-sense-and-thinking">transmediale16</a>
             </div>
-          </div>
-          <div class="swiper-container-h">
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-wrapper">
-              <div class="swiper-slide"><img src="images/mtst_poster.jpg" alt="Mess with tech sense and thinking Poster" class="ri">
+            <div class="imagebox">
+              <div class="shadow"></div>
+              <div class="swiper-container-horizontal">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img class="swiper-img swiper-lazy" data-src="images/mtst/mtst_poster-Medium.jpg"/>
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                  <div class="swiper-slide"><img class="swiper-img swiper-lazy" data-src="images/mtst/mtst_flyer_cover-Medium.jpg"/>
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                  <div class="swiper-slide"><img class="swiper-img swiper-lazy" data-src="images/mtst/mtst_flyer_front-Medium.jpg"/>
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                  <div class="swiper-slide"><img class="swiper-img swiper-lazy" data-src="images/mtst/mtst_flyer_back-Medium.jpg"/>
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                </div>
+                <div class="swiper-scrollbar"></div>
               </div>
-              <div class="swiper-slide"><img src="images/mtst_flyer_cover.jpg" alt="Mess with tech sense and thinking Flyer Cover" class="ri">
-              </div>
-              <div class="swiper-slide"><img src="images/mtst_flyer_front.jpg" alt="Mess with tech sense and thinking Flyer Front" class="ri">
-              </div>
-              <div class="swiper-slide"><img src="images/mtst_flyer_back.jpg" alt="Mess with tech sense and thinking Flyer Back" class="ri">
-              </div>
+              <div class="shadow"></div>
             </div>
           </div>
         </div>
-        <div data-hash="media-art-award" class="swiper-slide">
-          <div onclick="toggleInfo(this);" class="info">i
-            <div class="expand-text"> 
+        <div class="swiper-slide" data-hash="media-art-award">
+          <div class="inner-slide">
+            <div class="description">
               <h1>Preis der Medienkunst / Mediengestaltung</h1>
-              <h2>02 2016</h2>
+              <h4>02 2016</h4>
               <p>
-                 
-                The Media Art Award is an annual competition for recent graduates. I created the minimalistic poster for the 2014 edition. 
+                 The Media Art Award is an annual competition for recent graduates. With the help of <a target="_blank" href="http://thegreeneyl.com">Gunnar Green</a> I created the minimalistic poster for the 2014 edition. 
                 The octahedron resembles a digital version of a handax, the first human tool. But it also stands for the 8 fields of study in Media Art and Design.
                 A 3 dimensional version was given out as the first price.
               </p>
             </div>
-          </div>
-          <div class="swiper-container-h">
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-wrapper">
-              <div class="swiper-slide"><img src="images/pdm_black.jpg" alt="Preis der Medienkunst black" class="ri dropshadow">
+            <div class="imagebox">
+              <div class="shadow"></div>
+              <div class="swiper-container-horizontal">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"> <img class="swiper-img swiper-lazy" data-src="images/pdm/pdm_black.jpg"/>
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                  <div class="swiper-slide"> <img class="swiper-img swiper-lazy" data-src="images/pdm/pdm_white.png"/>
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                  <div class="swiper-slide"> <img class="swiper-img swiper-lazy" data-src="images/pdm/pdm_mockup-Medium.jpg"/>
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                </div>
+                <div class="swiper-scrollbar"></div>
               </div>
-              <div class="swiper-slide"><img src="images/pdm_mockup.jpg" alt="Preis der Medienkunst printed" class="ri">
-              </div>
+              <div class="shadow"></div>
             </div>
           </div>
         </div>
       </div>
+      <div class="swiper-pagination"></div>
     </div>
-    <script src="js/swiper.min.js"></script>
-    <script src="js/swiper-script.js"></script>
-    <script src="js/toggle.js"></script>
   </body>
 </html>
