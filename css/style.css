@@ -187,9 +187,9 @@ p{
     }
     #toggle-info{
         font-family: "LaFawnduh", Hack, monospace;
-        display: inline;
+        display: block;
         position: absolute;
-        bottom: 30px;
+        bottom: 60px;
         margin-left: auto;
         margin-right: auto;
         left: 0;
@@ -198,10 +198,6 @@ p{
         background: var(--bg);
         border-radius: 15px;
         padding: 10px;
-    }
-    #toggle-info:hover{
-        background: #00f;
-        color: var(--shade)
     }
     .inner-slide {
         flex-direction: column;
