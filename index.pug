@@ -16,7 +16,7 @@ mixin vSlide(hash)
     .inner-slide
       block
 
-mixin hyperlink(link)
+mixin l(link)
   a(target="_blank", href=link)
     block
 
@@ -44,12 +44,14 @@ html(lang="en")
     link(rel='stylesheet', type='text/css', href='css/style.css')
 
     //- script(defer, src="node_modules/swiper/js/swiper.min.js")
-    script(defer, src="js/swiper.min.js")
+    script(defer, src="js/swiper.js")
     script(defer, src="js/swiper-script.js")
     script(defer, src="js/eye.js")
+    script(defer, src="js/toggle.js")
 
   body
     img#follower(src="assets/cursor/svg/mouse-drag.svg")
+    <button id="toggle-info" onclick="toggleInfo()"> info </button>
     .swiper-container-vertical
       .swiper-wrapper
         .swiper-slide(data-hash="👁")
@@ -61,29 +63,48 @@ html(lang="en")
                 <br>Here is m&#128065; #[a(target='_blank', href='mailto:matthias@pitscher.net') contact] &mdash; Let's create something n&#128065;ce together! 
 
               small typeface by #[a(target='_blank', href='https://napoleon.services/') napoleon.services]
-              img(src="images/keys.svg", width="100", style="position: absolute;bottom: 100px")
-              small(style= "position: absolute;bottom: 30px; text-align: center;") scroll to &#128065; some <br> print & web projects
+              img(src="images/keys.svg", width="100", style="position: absolute;bottom: 140px")
+              small(style= "position: absolute;bottom: 100px; text-align: center;") scroll to &#128065; some <br> print & web projects
         +vSlide("cocolands")
           .description
             h1 coco lands
-            h4 02 2020
+            h4 03 2020
             p.
-              With a group of international artists we initiated coco lands to start a collaborative diary during the coronavirus pandemic. With Juan Pablo we created a #[+hyperlink('https://cocolands.xyz/') website] to collect our creative outputs. The page is running on tumblr with a custom template, utilizing threejs for 3D rendering.
+              With a group of international artists we initiated coco lands to start a collaborative diary during the coronavirus pandemic. With Juan Pablo we created a #[+l('https://cocolands.xyz/') website] to collect our creative outputs. The page is running on tumblr with a custom template, utilizing threejs for 3D rendering.
               <br> Font in use: Tomorrow
           +carousel
             .swiper-slide
-              +image("images/coco/coco_web_1.png")
+              +image("images/coco/coco_gif/ani_coco_30.gif")
             .swiper-slide
               +image("images/coco/coco_web_2.jpg")
             .swiper-slide
               +image("images/coco/coco_web_3.png")
+
+        +vSlide("cybersquat")
+          .description
+            h1 Cybersquat
+            h4 02 2020
+            p For #[+l('https://squatted.online') squatted.online] I was living in a small Kiosk in Basel. While I was living inside, people could watch me working through screens from the street and through a livestream online. I collected my stories in a little diary and created a messy installation with the leftovers.
+            p Journal: Edition of 30
+            p #[+l('https://squatted.online/squat/main_entrance/staircase/floor_2/bedroom_1/drawer/index.html') website]
+          +carousel
+            .swiper-slide
+              +image("images/squat/kiosk.jpg")
+            .swiper-slide
+              +image("images/squat/inside.jpg")
+            .swiper-slide
+              +image("images/squat/exhibit.jpg")
+            .swiper-slide
+              +image("images/squat/website.png")
+            .swiper-slide
+              +image("images/squat/diary/ani_diary_30.gif")
 
         +vSlide("shared-habitats-linz")
           .description
             h1 Shared Habitats
             h4 08 2019
             p.
-              As part of the Ars Electronica festival, the Bauhaus Uni organized another Shared Habitats exhibition. I worked with Ursula Damm, Theresa Schubert and Mindaugas Gapševičius on the visual identity. A generative, organic looking, blob was used as the main icon on the #[+hyperlink('http://shared-habitats.eu/') website], a poster, booklets & stickers.
+              As part of the Ars Electronica festival, the Bauhaus Uni organized another Shared Habitats exhibition. I worked with Ursula Damm, Theresa Schubert and Mindaugas Gapševičius on the visual identity. A generative, organic looking, blob was used as the main icon on the #[+l('http://shared-habitats.eu/') website], a poster, booklets & stickers.
               <br>Fonts in use: Neue Machina, IBM Plex Mono
           +carousel
             .swiper-slide
@@ -105,13 +126,63 @@ html(lang="en")
             .swiper-slide
               +image("images/sh_2/shared_habitats_flyer5.jpg")
             
-
+        +vSlide("infields")
+          .description
+            h1 infields
+            h4 07 2019
+            p infields connects field recordings of a rumanian cell tower site with a printed publication. The site is located close to Făgăraș and consists of 4 towers sending radio and cellular signals. To connect to the soundfiles you need to scan the QR codes in the book.
+            p The project was published as part of the #[+l('https://m.facebook.com/soundslikeabook/') sounds like a book] residency and the book was produced by Graphomat.
+            p Size: 25cm by 50cm <br> Edition of 5
+            p images by Eliot & revista22 
+          +carousel
+            .swiper-slide
+              +image('images/infields/infields_DH5.jpg')
+            .swiper-slide
+              +image('images/infields/revista22.jpg')
+            .swiper-slide
+              +image('images/infields/infields_long_tall-1-page1.jpg')
+            .swiper-slide
+              +image('images/infields/infields_long_tall-1-page2.jpg')
+            .swiper-slide
+              +image('images/infields/infields_long_tall-1-page3.jpg')
+            .swiper-slide
+              +image('images/infields/infields_long_tall-1-page4.jpg')
+            .swiper-slide
+              +image('images/infields/infields_long_tall-1-page5.jpg')
+            .swiper-slide
+              +image('images/infields/infields_long_tall-1-page6.jpg')
+            .swiper-slide
+              +image('images/infields/infields_long_tall-1-page7.jpg')
+            .swiper-slide
+              +image('images/infields/infields_long_tall-1-page8.jpg')
+            .swiper-slide
+              +image('images/infields/infields_long_tall-1-page9.jpg')
+            .swiper-slide
+              +image('images/infields/infields_long_tall-1-page10.jpg')
+        +vSlide("meanwhile-in-china")
+          .description
+            h1 Meanwhile in China
+            h4 04 & 10 2019
+            p As part of the artist collective »Sai Bao & Yang Mu« we created two installations that deal with the fact that the app Tik Tok is called Douyin in mainland china and only features chinese content.
+            p The first version was exhibited at the Xie Zilong Photography Museum in Changsha featuring a 7 channel #[+l('https://vimeo.com/335020808') video] installation with animated graphics.
+            p The second was exhibited at Ars Electronica with a 6x3m wallpaper and a single channel video.
+          +carousel
+            .swiper-slide
+              +image('images/china/changsha_2.jpg')
+            .swiper-slide
+              +image('images/china/changsha_3.jpg')
+            .swiper-slide
+              +image('images/china/ars_3.jpg')
+            .swiper-slide
+              +image('images/china/ars_1.jpg')
+            .swiper-slide
+              +image('images/china/ars_2.jpg')
         +vSlide("btbb")
           .description
             h1 Born to be Bauhaus
             h4 2018-2023
             p.
-              Together with #[+hyperlink('http://adrianpalko.com/') Adrian Palko] we created the identity for the annual art prize #[+hyperlink('https://www.uni-weimar.de/born-to-be-bauhaus/') Born to be Bauhaus]. Each year is represented by a bright neon color. Posters are printed in offset with a special colors. 
+              Together with #[+l('http://adrianpalko.com/') Adrian Palko] we created the identity for the annual art prize #[+l('https://www.uni-weimar.de/born-to-be-bauhaus/') Born to be Bauhaus]. Each year is represented by a bright neon color. Posters are printed in offset with a special colors. 
               <br> The page is a progressive web app, built with nuxtjs.
               <br> Fonts in use: Monument Grotesk, Pano, Pickle
           +carousel
@@ -207,6 +278,14 @@ html(lang="en")
               +image("images/smm/smm_website.jpg")
             .swiper-slide
               +image("images/smm/smm_thesis-Medium.jpg")
+            .swiper-slide
+              +image("images/smm/smm_thesis-Medium.jpg")
+            .swiper-slide
+              +image("images/smm/smm_-bg_clean.jpg")
+            .swiper-slide
+              +image("images/smm/smm_pillow_3.jpg")
+            .swiper-slide
+              +image("images/smm/smm_pillow_5.jpg")
 
         +vSlide("spekulative-gesellschaft")
           .description
@@ -264,7 +343,7 @@ html(lang="en")
             h1 Preis der Medienkunst / Mediengestaltung
             h4 02 2016
             p 
-              | The Media Art Award is an annual competition for recent graduates. With the help of #[+hyperlink("http://thegreeneyl.com") Gunnar Green] I created the minimalistic poster for the 2014 edition. 
+              | The Media Art Award is an annual competition for recent graduates. With the help of #[+l("http://thegreeneyl.com") Gunnar Green] I created the minimalistic poster for the 2014 edition. 
               | The octahedron resembles a digital version of a handax, the first human tool. But it also stands for the 8 fields of study in Media Art and Design.
               | A 3 dimensional version was given out as the first price.
           +carousel

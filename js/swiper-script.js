@@ -19,8 +19,7 @@ var hSwiper = new Swiper(".swiper-container-horizontal", {
     loop: false,
     slidesPerView: 1,
     speed: 700,
-    freeMode: true,
-    touchStartPreventDefault: false,
+    freeMode: false,
     mousewheel: true,
     // autoHeight: true,
     centeredSlides: true,
@@ -39,6 +38,7 @@ var hSwiper = new Swiper(".swiper-container-horizontal", {
             slidesPerView: 2,
             spaceBetween: 100,
             centeredSlides: true,
+            freeMode: true,
             // autoHeight: false,
 
         }

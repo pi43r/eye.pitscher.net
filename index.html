@@ -17,11 +17,12 @@
     <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
     <link rel="stylesheet" type="text/css" href="fonts/font.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script defer src="js/swiper.min.js"></script>
+    <script defer src="js/swiper.js"></script>
     <script defer src="js/swiper-script.js"></script>
     <script defer src="js/eye.js"></script>
+    <script defer src="js/toggle.js"></script>
   </head>
-  <body><img id="follower" src="assets/cursor/svg/mouse-drag.svg">
+  <body><img id="follower" src="assets/cursor/svg/mouse-drag.svg"><button id="toggle-info" onclick="toggleInfo()"> info </button>
     <div class="swiper-container-vertical">
       <div class="swiper-wrapper">
         <div class="swiper-slide" data-hash="👁">
@@ -31,7 +32,7 @@
                 H&#128065;, <br>m&#128065; name is pitscher. 
 <br>&#128065; am an artist and des&#128065;gner working with technology in d&#128065;verse ways.
 <br>Here is m&#128065; <a target="_blank" href="mailto:matthias@pitscher.net">contact</a> &mdash; Let's create something n&#128065;ce together! 
-              </h1><small>typeface by <a target="_blank" href="https://napoleon.services/">napoleon.services</a></small><img src="images/keys.svg" width="100" style="position: absolute;bottom: 100px"><small style="position: absolute;bottom: 30px; text-align: center;">scroll to &#128065; some <br> print & web projects</small>
+              </h1><small>typeface by <a target="_blank" href="https://napoleon.services/">napoleon.services</a></small><img src="images/keys.svg" width="100" style="position: absolute;bottom: 140px"><small style="position: absolute;bottom: 100px; text-align: center;">scroll to &#128065; some <br> print & web projects</small>
             </div>
           </div>
         </div>
@@ -39,7 +40,7 @@
           <div class="inner-slide">
             <div class="description">
               <h1>coco lands</h1>
-              <h4>02 2020</h4>
+              <h4>03 2020</h4>
               <p>With a group of international artists we initiated coco lands to start a collaborative diary during the coronavirus pandemic. With Juan Pablo we created a <a target="_blank" href="https://cocolands.xyz/">website</a> to collect our creative outputs. The page is running on tumblr with a custom template, utilizing threejs for 3D rendering.
                 <br> Font in use: Tomorrow
               </p>
@@ -48,13 +49,50 @@
               <div class="shadow"></div>
               <div class="swiper-container-horizontal">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide"><img class="swiper-img swiper-lazy" data-src="images/coco/coco_web_1.png"/>
+                  <div class="swiper-slide"><img class="swiper-img swiper-lazy" data-src="images/coco/coco_gif/ani_coco_30.gif"/>
                     <div class="swiper-lazy-preloader"></div>
                   </div>
                   <div class="swiper-slide"><img class="swiper-img swiper-lazy" data-src="images/coco/coco_web_2.jpg"/>
                     <div class="swiper-lazy-preloader"></div>
                   </div>
                   <div class="swiper-slide"><img class="swiper-img swiper-lazy" data-src="images/coco/coco_web_3.png"/>
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                </div>
+                <div class="swiper-scrollbar"></div>
+              </div>
+              <div class="shadow"></div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide" data-hash="cybersquat">
+          <div class="inner-slide">
+            <div class="description">
+              <h1>Cybersquat</h1>
+              <h4>02 2020</h4>
+              <p>For <a target="_blank" href="https://squatted.online">squatted.online</a> I was living in a small Kiosk in Basel. While I was living inside, people could watch me working through screens from the street and through a livestream online. I collected my stories in a little diary and created a messy installation with the leftovers.
+              </p>
+              <p>Journal: Edition of 30</p>
+              <p><a target="_blank" href="https://squatted.online/squat/main_entrance/staircase/floor_2/bedroom_1/drawer/index.html">website</a>
+              </p>
+            </div>
+            <div class="imagebox">
+              <div class="shadow"></div>
+              <div class="swiper-container-horizontal">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img class="swiper-img swiper-lazy" data-src="images/squat/kiosk.jpg"/>
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                  <div class="swiper-slide"><img class="swiper-img swiper-lazy" data-src="images/squat/inside.jpg"/>
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                  <div class="swiper-slide"><img class="swiper-img swiper-lazy" data-src="images/squat/exhibit.jpg"/>
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                  <div class="swiper-slide"><img class="swiper-img swiper-lazy" data-src="images/squat/website.png"/>
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                  <div class="swiper-slide"><img class="swiper-img swiper-lazy" data-src="images/squat/diary/ani_diary_30.gif"/>
                     <div class="swiper-lazy-preloader"></div>
                   </div>
                 </div>
@@ -102,6 +140,100 @@
                     <div class="swiper-lazy-preloader"></div>
                   </div>
                   <div class="swiper-slide"><img class="swiper-img swiper-lazy" data-src="images/sh_2/shared_habitats_flyer5.jpg"/>
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                </div>
+                <div class="swiper-scrollbar"></div>
+              </div>
+              <div class="shadow"></div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide" data-hash="infields">
+          <div class="inner-slide">
+            <div class="description">
+              <h1>infields</h1>
+              <h4>07 2019</h4>
+              <p>infields connects field recordings of a rumanian cell tower site with a printed publication. The site is located close to Făgăraș and consists of 4 towers sending radio and cellular signals. To connect to the soundfiles you need to scan the QR codes in the book.</p>
+              <p>The project was published as part of the <a target="_blank" href="https://m.facebook.com/soundslikeabook/">sounds like a book</a> residency and the book was produced by Graphomat.
+              </p>
+              <p>Size: 25cm by 50cm <br> Edition of 5</p>
+              <p>images by Eliot & revista22 </p>
+            </div>
+            <div class="imagebox">
+              <div class="shadow"></div>
+              <div class="swiper-container-horizontal">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img class="swiper-img swiper-lazy" data-src="images/infields/infields_DH5.jpg"/>
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                  <div class="swiper-slide"><img class="swiper-img swiper-lazy" data-src="images/infields/revista22.jpg"/>
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                  <div class="swiper-slide"><img class="swiper-img swiper-lazy" data-src="images/infields/infields_long_tall-1-page1.jpg"/>
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                  <div class="swiper-slide"><img class="swiper-img swiper-lazy" data-src="images/infields/infields_long_tall-1-page2.jpg"/>
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                  <div class="swiper-slide"><img class="swiper-img swiper-lazy" data-src="images/infields/infields_long_tall-1-page3.jpg"/>
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                  <div class="swiper-slide"><img class="swiper-img swiper-lazy" data-src="images/infields/infields_long_tall-1-page4.jpg"/>
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                  <div class="swiper-slide"><img class="swiper-img swiper-lazy" data-src="images/infields/infields_long_tall-1-page5.jpg"/>
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                  <div class="swiper-slide"><img class="swiper-img swiper-lazy" data-src="images/infields/infields_long_tall-1-page6.jpg"/>
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                  <div class="swiper-slide"><img class="swiper-img swiper-lazy" data-src="images/infields/infields_long_tall-1-page7.jpg"/>
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                  <div class="swiper-slide"><img class="swiper-img swiper-lazy" data-src="images/infields/infields_long_tall-1-page8.jpg"/>
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                  <div class="swiper-slide"><img class="swiper-img swiper-lazy" data-src="images/infields/infields_long_tall-1-page9.jpg"/>
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                  <div class="swiper-slide"><img class="swiper-img swiper-lazy" data-src="images/infields/infields_long_tall-1-page10.jpg"/>
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                </div>
+                <div class="swiper-scrollbar"></div>
+              </div>
+              <div class="shadow"></div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide" data-hash="meanwhile-in-china">
+          <div class="inner-slide">
+            <div class="description">
+              <h1>Meanwhile in China</h1>
+              <h4>04 & 10 2019</h4>
+              <p>As part of the artist collective »Sai Bao & Yang Mu« we created two installations that deal with the fact that the app Tik Tok is called Douyin in mainland china and only features chinese content.</p>
+              <p>The first version was exhibited at the Xie Zilong Photography Museum in Changsha featuring a 7 channel <a target="_blank" href="https://vimeo.com/335020808">video</a> installation with animated graphics.
+              </p>
+              <p>The second was exhibited at Ars Electronica with a 6x3m wallpaper and a single channel video.</p>
+            </div>
+            <div class="imagebox">
+              <div class="shadow"></div>
+              <div class="swiper-container-horizontal">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img class="swiper-img swiper-lazy" data-src="images/china/changsha_2.jpg"/>
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                  <div class="swiper-slide"><img class="swiper-img swiper-lazy" data-src="images/china/changsha_3.jpg"/>
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                  <div class="swiper-slide"><img class="swiper-img swiper-lazy" data-src="images/china/ars_3.jpg"/>
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                  <div class="swiper-slide"><img class="swiper-img swiper-lazy" data-src="images/china/ars_1.jpg"/>
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                  <div class="swiper-slide"><img class="swiper-img swiper-lazy" data-src="images/china/ars_2.jpg"/>
                     <div class="swiper-lazy-preloader"></div>
                   </div>
                 </div>
@@ -270,6 +402,18 @@
                     <div class="swiper-lazy-preloader"></div>
                   </div>
                   <div class="swiper-slide"><img class="swiper-img swiper-lazy" data-src="images/smm/smm_thesis-Medium.jpg"/>
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                  <div class="swiper-slide"><img class="swiper-img swiper-lazy" data-src="images/smm/smm_thesis-Medium.jpg"/>
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                  <div class="swiper-slide"><img class="swiper-img swiper-lazy" data-src="images/smm/smm_-bg_clean.jpg"/>
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                  <div class="swiper-slide"><img class="swiper-img swiper-lazy" data-src="images/smm/smm_pillow_3.jpg"/>
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                  <div class="swiper-slide"><img class="swiper-img swiper-lazy" data-src="images/smm/smm_pillow_5.jpg"/>
                     <div class="swiper-lazy-preloader"></div>
                   </div>
                 </div>
