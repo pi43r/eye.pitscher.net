@@ -11,6 +11,10 @@ mixin image(link)
   img.swiper-img.swiper-lazy(data-src=link)
   .swiper-lazy-preloader
 
+mixin image(link)
+  img.swiper-img.swiper-lazy(data-src=link)
+  .swiper-lazy-preloader
+
 mixin vSlide(hash)
   .swiper-slide(data-hash=hash)
     .inner-slide
@@ -24,24 +28,24 @@ doctype html
 html(lang="en")
   head
     meta(charset='utf-8')
-    meta(name='viewport', content='width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1')
-    meta(name='keywords', content='portfolio, art, design, contemporary, post-internet')
-    meta(name='author', content='Matthias Pitscher')
+    meta(name='viewport' content='width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1')
+    meta(name='keywords' content='portfolio, art, design, contemporary, post-internet')
+    meta(name='author' content='Matthias Pitscher')
     // facbeook stuff
     meta(property="og:url" content="https://xn--mp8h.pitscher.net")
     meta(property="og:image" content="https://xn--mp8h.pitscher.net/images/preview.png")
     meta(property="og:type" content="website")
     meta(property="og:title" content="&#128065;")
     meta(property="og:description" content="H&#128065;, m&#128065; name is Pitscher. ")
-      
+
     title Pitscher
 
     link(rel='shortcut icon' href='favicon.ico')
-    link(rel='stylesheet', type='text/css', href='css/normalize.css')
-    //- link(rel='stylesheet', type='text/css', href='node_modules/swiper/css/swiper.min.css')
-    link(rel='stylesheet', type='text/css', href='css/swiper.min.css')
-    link(rel='stylesheet', type='text/css', href='fonts/font.css')
-    link(rel='stylesheet', type='text/css', href='css/style.css')
+    link(rel='stylesheet' type='text/css' href='css/normalize.css')
+    //- link(rel='stylesheet' type='text/css' href='node_modules/swiper/css/swiper.min.css')
+    link(rel='stylesheet' type='text/css' href='css/swiper.min.css')
+    link(rel='stylesheet' type='text/css' href='fonts/font.css')
+    link(rel='stylesheet' type='text/css' href='css/style.css')
 
     //- script(defer, src="node_modules/swiper/js/swiper.min.js")
     script(defer, src="js/swiper.js")
@@ -60,18 +64,41 @@ html(lang="en")
               h1 H&#128065;, 
                 <br>m&#128065; name is pitscher. 
                 <br>&#128065; am an artist and des&#128065;gner working with technology in d&#128065;verse ways.
-                <br>Here is m&#128065; #[a(target='_blank', href='mailto:matthias@pitscher.net') contact] &mdash; Let's create something n&#128065;ce together! 
+                <br>Here is m&#128065; #[a(target='_blank' href='mailto:matthias@pitscher.net') contact] &mdash; Let's create something n&#128065;ce together! 
 
-              small typeface by #[a(target='_blank', href='https://napoleon.services/') napoleon.services]
-              img(src="images/keys.svg", width="100", style="position: absolute;bottom: 140px")
+              small typeface by #[a(target='_blank' href='https://napoleon.services/') napoleon.services]
+              img(src="images/keys.svg" width="100" style="position: absolute;bottom: 140px")
               small(style= "position: absolute;bottom: 100px; text-align: center;") scroll to &#128065; some <br> print & web projects
+        +vSlide("lostcloud")
+          .description
+            h1 Lost in a garden of clouds
+            h4 05 2020
+            p.
+              As the artist duo #[+l('https://saibao-yangmu.online/') Sai Bao & Yang Mu] we were invited to create the online #[+l('https://cloud.radical-openness.org/lost.html') exhibition] for the festival »Art Meets Radical Openness 2020« in Linz. Early on we decided to create a text adventure, where the visitor walks in circles exploring multiple dimensions of interacting with the artworks. I used a custom shader to render the clouds live. Everything is hand coded using iframes as the core mechanism. <br> Font in use: Fancycube. A remake of #[+l('https://en.wikipedia.org/wiki/Bill_Atkinson') Bill Atkinson]'s Venice.
+          +carousel
+            .swiper-slide
+              +image("images/lost/lost-1.png")
+            .swiper-slide
+              <video autoplay muted loop><source src="images/lost/lostgarden.m4v" type="video/mp4"></video>
+            .swiper-slide
+              +image("images/lost/lost-2.jpg")
+            .swiper-slide
+              +image("images/lost/lost-3.jpg")
+            .swiper-slide
+              +image("images/lost/lost-4.jpg")
+            .swiper-slide
+              +image("images/lost/lost-5.jpg")
+            .swiper-slide
+              +image("images/lost/lost-6.jpg")
+            .swiper-slide
+              +image("images/lost/amro_club.jpg")
         +vSlide("cocolands")
           .description
             h1 coco lands
             h4 03 2020
             p.
               With a group of international artists we initiated coco lands to start a collaborative diary during the coronavirus pandemic. With Juan Pablo we created a #[+l('https://cocolands.xyz/') website] to collect our creative outputs. The page is running on tumblr with a custom template, utilizing threejs for 3D rendering.
-              <br> Font in use: Tomorrow
+              <br>Font in use: Tomorrow
           +carousel
             .swiper-slide
               +image("images/coco/coco_gif/ani_coco_30.gif")
@@ -125,7 +152,7 @@ html(lang="en")
               +image("images/sh_2/shared_habitats_flyer4.jpg")
             .swiper-slide
               +image("images/sh_2/shared_habitats_flyer5.jpg")
-            
+
         +vSlide("infields")
           .description
             h1 infields
@@ -206,7 +233,7 @@ html(lang="en")
             h1 Thibaut Henz
             h4 03 2018
             p.
-              Online portfolio for the photographer #[a(target='_blank', href='https://thibauthenz.com/') Thibaut Henz]. We decided on a customized version of the wordpress lay theme, which gives him the ability to arrange images in interesting ways.
+              Online portfolio for the photographer #[a(target='_blank' href='https://thibauthenz.com/') Thibaut Henz]. We decided on a customized version of the wordpress lay theme, which gives him the ability to arrange images in interesting ways.
               <br> Font in use: Sinkin Sans
           +carousel
             .swiper-slide
@@ -227,9 +254,9 @@ html(lang="en")
             p 
               | Advertisement for two shows at a secret venue in Leipzig. The styles are completely opposit of each other. 
               | While one is minimalistic with a fine noise texture and showcasing the great font 
-              a(target='_blank', href='http://oxlos.crowdfont.org') Oxlos
+              a(target='_blank' href='http://oxlos.crowdfont.org') Oxlos
               |. The other one is completely overloaded with 
-              a(target='_blank', href='https://openclipart.org/') ClipArt
+              a(target='_blank' href='https://openclipart.org/') ClipArt
               |.
           +carousel
             .swiper-slide
@@ -245,7 +272,7 @@ html(lang="en")
             h4 06 2017
             p 
               | I had the pleasure to design a Poster for the exhibition “Shared Habitats” in 
-              a(target='_blank', href='https://www.google.de/maps/place/Kaohsiung,+Taiwan/@20.5587299,119.7285306,611404a,35y,25.31t/data=!3m1!1e3!4m5!3m4!1s0x346e43517a7a741b:0x4826a24a54732a37!8m2!3d22.6272784!4d120.3014353?hl=de') Kaohsiung
+              a(target='_blank' href='https://www.google.de/maps/place/Kaohsiung,+Taiwan/@20.5587299,119.7285306,611404a,35y,25.31t/data=!3m1!1e3!4m5!3m4!1s0x346e43517a7a741b:0x4826a24a54732a37!8m2!3d22.6272784!4d120.3014353?hl=de') Kaohsiung
               |.
               |Ursula Damm and her students are exhibiting media art works that deal with the environment (Umwelt). The poster can be flipped upside down and two posters together remind us of our shared habitat.
           +carousel
@@ -264,10 +291,10 @@ html(lang="en")
               | The promotional pictures resemble stockphotos.
               br
               | More information: 
-              a(target='_blank', href='http://www.socialmediameditation.net') www.socialmediameditation.net
+              a(target='_blank' href='http://www.socialmediameditation.net') www.socialmediameditation.net
               br
               | Even more information in my 
-              a(target='_blank', href='http://www.pitscher.net/Thesis_SMM.pdf') Thesis Book
+              a(target='_blank' href='http://www.pitscher.net/Thesis_SMM.pdf') Thesis Book
               | (german)
           +carousel
             .swiper-slide
@@ -337,7 +364,7 @@ html(lang="en")
               +image("images/mtst/mtst_flyer_front-Medium.jpg")
             .swiper-slide
               +image("images/mtst/mtst_flyer_back-Medium.jpg")
-            
+
         +vSlide("media-art-award")
           .description
             h1 Preis der Medienkunst / Mediengestaltung
