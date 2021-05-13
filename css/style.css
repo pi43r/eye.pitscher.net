@@ -175,6 +175,10 @@ p{
     display: none;
 }
 
+video{
+    max-width: 100%;
+}
+
 @media (max-width: 1024px) {
     #follower{
         width: 50px;
