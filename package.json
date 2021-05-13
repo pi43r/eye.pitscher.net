@@ -1,5 +1,17 @@
 {
-  "dependencies": {
-    "swiper": "^6.5.1"
+  "name": "eye.pitscher.net",
+  "version": "1.0.1",
+  "description": "Hi,\r This is my little graphic design portfolio page.\r Thanks for checking out this repository, feel free to use any code you might find helpful.\r But please ask me first if you would like to use a picture ;)",  "scripts": {
+    "pug": "pug index.pug"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pi43r/eye.pitscher.net.git"
+  },
+  "author": "pitscher.net",
+  "license": "ISC",
+  "homepage": "https://xn--mp8h.pitscher.net/",
+  "devDependencies": {
+    "pug-cli": "*"
   }
 }
