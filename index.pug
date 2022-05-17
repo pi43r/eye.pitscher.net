@@ -67,6 +67,65 @@ html(lang="en")
               small typeface by #[a(target='_blank' href='https://eriksachse.com/') Erik Sachse]
               img(src="images/keys.svg" width="100" style="position: absolute;bottom: 140px")
               small(style= "position: absolute;bottom: 100px; text-align: center;") scroll to &#128065; some <br> print & web projects
+
+        +vSlide("nc-atelierhaus")
+          .description
+            h1 Next Cloud Atelierhaus 
+            h4 03 2022
+            p.
+             #[+l('http://davidebevilacqua.com/') Davide Bevilacqua], #[+l('https://sofiabraga.com/') S()fia Braga] and I organized an online residency through the net culture initiative #[+l('https://core.servus.at') servus.at]. With Juan Pablo Linares Ceballos I worked on the visual identity that is reminiscent of an abstract floor plan. <br/>
+             We also created a custom website generator that takes the content from a Nextcloud folder and builds javascript application with Svelte. <br/>
+             visit the #[+l('https://atelierhaus.servus.at/') atelierhaus] <br/>
+             Fonts in use: #[+l('https://www.redaction.us/') redaction]
+          +carousel
+            .swiper-slide
+              +image("images/nca/nca_login.jpg")
+            .swiper-slide
+              +image("images/nca/nca (1).jpg")
+            .swiper-slide
+              +image("images/nca/nca (2).jpg")
+            .swiper-slide
+              +image("images/nca/nca (3).jpg")
+            .swiper-slide
+              +image("images/nca/nca (4).jpg")
+
+        +vSlide("dwhx")
+          .description
+            h1 dwhX 
+            h4 11 2021
+            p.
+              The viennese art association #[+l('https://dasweissehaus.at') das weisse haus] wanted a new online space that could serve as a platform for digital experimentation: #[+l('https://dwhx.space') dwhx.space]. Together with the designer Alyona Chiobanu, we drafted a 3D environment that hosts texts, audio and video files. For me it was the first time working with 3D elements on the web in such a scale, which was a challenge. But the open source library react-three-fiber in combination with next.js made things a lot easier. <br/> Fonts in use: Gramatika & Suisse Neue.
+            
+          +carousel
+            .swiper-slide
+              +image("images/dwhx/dwhx-02-01.jpg")
+            .swiper-slide
+              +image("images/dwhx/dwhx-02-02.jpg")
+            .swiper-slide
+              +image("images/dwhx/dwhx-02-03.jpg")
+            .swiper-slide
+              +image("images/dwhx/dwhx-02-04.jpg")
+
+        +vSlide("sfc")
+          .description
+            h1 Silicon Friend Camp 
+            h4 08 2021
+            p.
+              With the net culture initiative #[+l('https://core.servus.at') servus.at] I organized a summer camp in Austrian Alps. For the #[+l('https://cwc.radical-openness.org/siliconfriendcamp/') Open Call] we distributed a website that was designed by Alyona Ciobanu and hand coded by me. <br/>
+              For the related symposium website I decided to use a more neutral tone that took inspiration from old terminal computers. <br/>
+              The layout of the posters were generated with JavaScript and the images were generated with ruDalle, a text-to-image AI model. 
+
+          +carousel
+            .swiper-slide
+              +image("images/cwc/open-call.jpg")
+            .swiper-slide
+              +image("images/cwc/symposium.jpg")
+            .swiper-slide
+              +image("images/cwc/exhibition.jpg")
+            .swiper-slide
+              +image("images/cwc/poster.jpg")
+
+
         +vSlide("lostcloud")
           .description
             h1 Lost in a garden of clouds
@@ -90,6 +149,7 @@ html(lang="en")
               +image("images/lost/lost-6.jpg")
             .swiper-slide
               +image("images/lost/amro_club.jpg")
+
         +vSlide("cocolands")
           .description
             h1 coco lands
@@ -105,24 +165,24 @@ html(lang="en")
             .swiper-slide
               +image("images/coco/coco_web_3.png")
 
-        +vSlide("cybersquat")
-          .description
-            h1 Cybersquat
-            h4 02 2020
-            p For #[+l('https://squatted.online') squatted.online] I was living in a small Kiosk in Basel. While I was living inside, people could watch me working through screens from the street and through a livestream online. I collected my stories in a little diary and created a messy installation with the leftovers.
-            p Journal: Edition of 30
-            p #[+l('https://squatted.online/squat/main_entrance/staircase/floor_2/bedroom_1/drawer/index.html') website]
-          +carousel
-            .swiper-slide
-              +image("images/squat/kiosk.jpg")
-            .swiper-slide
-              +image("images/squat/inside.jpg")
-            .swiper-slide
-              +image("images/squat/exhibition.jpg")
-            .swiper-slide
-              +image("images/squat/website.png")
-            .swiper-slide
-              +image("images/squat/diary/ani_diary_30.gif")
+        //- +vSlide("cybersquat")
+        //-   .description
+        //-     h1 Cybersquat
+        //-     h4 02 2020
+        //-     p For #[+l('https://squatted.online') squatted.online] I was living in a small Kiosk in Basel. While I was living inside, people could watch me working through screens from the street and through a livestream online. I collected my stories in a little diary and created a messy installation with the leftovers.
+        //-     p Journal: Edition of 30
+        //-     p #[+l('https://squatted.online/squat/main_entrance/staircase/floor_2/bedroom_1/drawer/index.html') website]
+        //-   +carousel
+        //-     .swiper-slide
+        //-       +image("images/squat/kiosk.jpg")
+        //-     .swiper-slide
+        //-       +image("images/squat/inside.jpg")
+        //-     .swiper-slide
+        //-       +image("images/squat/exhibition.jpg")
+        //-     .swiper-slide
+        //-       +image("images/squat/website.png")
+        //-     .swiper-slide
+        //-       +image("images/squat/diary/ani_diary_30.gif")
 
         +vSlide("shared-habitats-linz")
           .description
